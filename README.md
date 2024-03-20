@@ -34,7 +34,7 @@ bash setup/android_build_env.sh
 
 ```bash
 cd ~/havoc
-repo init -u https://github.com/ItsPi3141-Exynos/android_manifest.git -b thirteen --git-lfs
+repo init -u https://github.com/ItsPi3141-Exynos/havocos_manifest.git -b thirteen --git-lfs
 ```
   
 ## Sync the repository
