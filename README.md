@@ -21,16 +21,14 @@ mkdir -p ~/bin
 mkdir -p ~/havoc
 ```
 
-## Install `repo`
-
-Enter the following to download the `repo` binary and make it executable:
+## Install required packages
 
 ```bash
-curl <http://commondatastorage.googleapis.com/git-repo-downloads/repo> > ~/bin/repo && chmod a+x ~/bin/repo
+sudo apt-get install git-core
+git clone https://github.com/akhilnarang/scripts
+cd scripts
+bash setup/android_build_env.sh
 ```
-
-You may need to reboot for these changes to take effect.
-Now enter the following to initialize the repository:
 
 ## Initialise the repository
 
