@@ -1,0 +1,17 @@
+diff --git a/aidl/Android.bp b/aidl/Android.bp
+index 47a3e76..9564fb8 100644
+--- a/aidl/Android.bp
++++ b/aidl/Android.bp
+@@ -3,9 +3,9 @@ Common_CFlags += ["-Werror"]
+ 
+ cc_library_shared {
+     name: "vendor.qti.hardware.vibrator.impl",
+-    defaults: [
+-        "qti_vibrator_hal_defaults",
+-    ],
++    // defaults: [
++    //     "qti_vibrator_hal_defaults",
++    // ],
+     vendor: true,
+     srcs: [
+         "Vibrator.cpp",

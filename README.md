@@ -42,6 +42,14 @@ repo init -u https://github.com/ItsPi3141-Exynos/havocos_manifest.git -b thirtee
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
+## Patch files
+
+```bash
+mv ~/havoc/.repo/manifests/patches ~/havoc
+mv ~/havoc/.repo/manifests/patch.sh ~/havoc
+. ~/havoc/patch.sh
+```
+
 ## Build
 
 > [!NOTE]
