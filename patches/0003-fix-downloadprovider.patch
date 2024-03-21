@@ -1,8 +1,16 @@
 diff --git a/src/com/android/providers/downloads/DownloadStorageProvider.java b/src/com/android/providers/downloads/DownloadStorageProvider.java
-index 4127347d..2557448f 100644
+index 4127347d..f9ba7cd4 100644
 --- a/src/com/android/providers/downloads/DownloadStorageProvider.java
 +++ b/src/com/android/providers/downloads/DownloadStorageProvider.java
-@@ -314,7 +321,7 @@ public class DownloadStorageProvider extends FileSystemProvider {
+@@ -306,7 +306,6 @@ public class DownloadStorageProvider extends FileSystemProvider {
+         }
+     }
+ 
+-    @Override
+     protected Cursor queryChildDocuments(String documentId, String[] projection, String sortOrder,
+             boolean includeHidden) throws FileNotFoundException {
+         // Delegate to real provider
+@@ -314,7 +313,7 @@ public class DownloadStorageProvider extends FileSystemProvider {
          Cursor cursor = null;
          try {
              if (RawDocumentsHelper.isRawDocId(documentId)) {
