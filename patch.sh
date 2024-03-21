@@ -21,3 +21,4 @@ function patch {
 }
 
 patch 0001-remove-qti-vibrator-defaults-dependency.patch /vendor/qcom/opensource/vibrator/aidl/
+patch 0002-fix-turbo-adapter-hwservice-not-found.patch /device/lineage/sepolicy/

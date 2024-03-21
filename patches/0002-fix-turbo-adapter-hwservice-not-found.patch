@@ -1,0 +1,7 @@
+diff --git a/common/vendor/platform_app.te b/common/vendor/platform_app.te
+index 8e861e5..762ca59 100644
+--- a/common/vendor/platform_app.te
++++ b/common/vendor/platform_app.te
+@@ -1 +1 @@
+-allow platform_app hal_turbo_adapter_hwservice:hwservice_manager find;
++# allow platform_app hal_turbo_adapter_hwservice:hwservice_manager find;
