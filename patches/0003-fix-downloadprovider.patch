@@ -1,0 +1,13 @@
+diff --git a/src/com/android/providers/downloads/DownloadStorageProvider.java b/src/com/android/providers/downloads/DownloadStorageProvider.java
+index 4127347d..2557448f 100644
+--- a/src/com/android/providers/downloads/DownloadStorageProvider.java
++++ b/src/com/android/providers/downloads/DownloadStorageProvider.java
+@@ -314,7 +321,7 @@ public class DownloadStorageProvider extends FileSystemProvider {
+         Cursor cursor = null;
+         try {
+             if (RawDocumentsHelper.isRawDocId(documentId)) {
+-                return super.queryChildDocuments(documentId, projection, sortOrder, includeHidden);
++                return super.queryChildDocuments(documentId, projection, sortOrder);
+             }
+ 
+             final DownloadsCursor result = new DownloadsCursor(projection,
