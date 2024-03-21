@@ -17,7 +17,6 @@ You will need to set up some directories in your build environment.
 To create them run:
 
 ```bash
-mkdir -p ~/bin
 mkdir -p ~/havoc
 ```
 
